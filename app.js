@@ -16,4 +16,9 @@ $(function () {
     });
     $("#gifContainer").append(newGif);
   });
+
+  $("#remove").on("click", function (e) {
+    e.preventDefault();
+    $("#gifContainer").empty();
+  });
 });
